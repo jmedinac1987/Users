@@ -11,6 +11,6 @@ This application is to work locally with user information under a json file.
 3. And that's it, you can start consuming the endpoints with the tool of your choice 🤓
 
 
-## Licencia
+## License
 
-Es un software de código abierto con licencia [MIT licencia](https://opensource.org/licenses/MIT).
+It is licensed open source software [MIT licencia](https://opensource.org/licenses/MIT).
