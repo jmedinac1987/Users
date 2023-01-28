@@ -41,14 +41,20 @@ function writeJsonData(bodyRequest) {
 
 function deleteJsonData(id) {
   try {
-    if(!data.some((user) => user.id == id)){
+    if (!data.some((user) => user.id == id)) {
       return { Status: 400, Response: "Username does not exist 😒" };
     }
     data = data.filter((user) => user.id != id);
     const usersJson = JSON.stringify(data);
     fs.writeFileSync(path, usersJson, "utf-8");
     return { Status: 200, Response: "User was deleted successfully! 😎" };
-  } catch (error) {}
+  } catch (err) {
+    console.error(err);
+    return {
+      Status: 500,
+      Response: "An error occurred during the deletion process 🥺",
+    };
+  }
 }
 
 //TODO: Pending include the function to update a record
