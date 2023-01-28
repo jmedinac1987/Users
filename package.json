@@ -1,0 +1,19 @@
+{
+  "name": "users",
+  "version": "1.0.0",
+  "description": "application to create and update information users, users needed for testing",
+  "main": "src/User.js",
+  "scripts": {
+    "start": "nodemon src/User.js"
+  },
+  "author": "jmedinac1987",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
