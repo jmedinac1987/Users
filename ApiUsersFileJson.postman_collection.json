@@ -9,22 +9,16 @@
 			"name": "Get User",
 			"request": {
 				"method": "GET",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"type": "default"
-					}
-				],
+				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/69838d18-f136-4a8a-b787-29d94c95c97c",
+					"raw": "http://localhost:3000/f510a7f5-aad4-4db9-a89c-987bb8b92d9e",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
-						"69838d18-f136-4a8a-b787-29d94c95c97c"
+						"f510a7f5-aad4-4db9-a89c-987bb8b92d9e"
 					]
 				}
 			},
