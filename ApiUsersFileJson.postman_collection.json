@@ -1,15 +1,46 @@
 {
 	"info": {
-		"_postman_id": "c4a9eaae-9133-4e55-803b-235ed63583d0",
+		"_postman_id": "92d41210-6459-4487-83a8-60d8d065c313",
 		"name": "ApiUsersFileJson",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
+			"name": "Get User",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/69838d18-f136-4a8a-b787-29d94c95c97c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"69838d18-f136-4a8a-b787-29d94c95c97c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Get Users",
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
 				"url": {
 					"raw": "http://localhost:3000",
 					"protocol": "http",
@@ -64,6 +95,36 @@
 					"path": [
 						"delete",
 						"56950db6-6e3b-4c44-aa09-6cd1a3299d02"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"User\": null,\r\n    \"Password\": null,\r\n    \"Role\": null,\r\n    \"App\": null,\r\n    \"Environment\": null\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/update/f510a7f5-aad4-4db9-a89c-987bb8b92d9e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"update",
+						"f510a7f5-aad4-4db9-a89c-987bb8b92d9e"
 					]
 				}
 			},
