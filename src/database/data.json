@@ -30,5 +30,13 @@
     "Role": "HL1",
     "App": "Nada",
     "Environment": "QA"
+  },
+  {
+    "id": "183c13be-727f-44ca-a90d-7afb05e2ecfc",
+    "User": "unomas@test.com",
+    "Password": "text56",
+    "Role": "HL2",
+    "App": "AirCard",
+    "Environment": "DEV"
   }
 ]
