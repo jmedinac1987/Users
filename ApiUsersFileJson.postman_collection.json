@@ -36,12 +36,15 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:3000",
+					"raw": "http://localhost:3000/users",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "3000"
+					"port": "3000",
+					"path": [
+						"users"
+					]
 				}
 			},
 			"response": []
@@ -53,7 +56,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"User\": \"yise@test.com\",\n    \"Password\": \"text56\",\n    \"Role\": \"HL2\",\n    \"App\": \"AirCard\",\n    \"Environment\": \"DEV\"\n}",
+					"raw": "{\n    \"User\": \"unomas@test.com\",\n    \"Password\": \"text56\",\n    \"Role\": \"HL2\",\n    \"App\": \"AirCard\",\n    \"Environment\": \"DEV\",\n    \"Url\": \"https://aaa.google.com\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -80,7 +83,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/delete/56950db6-6e3b-4c44-aa09-6cd1a3299d02",
+					"raw": "http://localhost:3000/delete/786c95f7-1e84-4469-acb9-ae5efe4b8a4e",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -88,7 +91,7 @@
 					"port": "3000",
 					"path": [
 						"delete",
-						"56950db6-6e3b-4c44-aa09-6cd1a3299d02"
+						"786c95f7-1e84-4469-acb9-ae5efe4b8a4e"
 					]
 				}
 			},
@@ -107,10 +110,10 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"User\": null,\r\n    \"Password\": null,\r\n    \"Role\": null,\r\n    \"App\": null,\r\n    \"Environment\": null\r\n}"
+					"raw": "{\r\n    \"id\": \"ee5abf83-9993-4a71-ab9f-1374962b4247\",\r\n    \"User\": \"unomas@test.com\",\r\n    \"Password\": \"text56\",\r\n    \"Role\": \"HL2\",\r\n    \"App\": \"AirCarda\",\r\n    \"Environment\": \"DEV\",\r\n    \"Url\": \"https://aaa.google.com\"\r\n}"
 				},
 				"url": {
-					"raw": "http://localhost:3000/update/f510a7f5-aad4-4db9-a89c-987bb8b92d9e",
+					"raw": "http://localhost:3000/update/ee5abf83-9993-4a71-ab9f-1374962b4247",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -118,7 +121,7 @@
 					"port": "3000",
 					"path": [
 						"update",
-						"f510a7f5-aad4-4db9-a89c-987bb8b92d9e"
+						"ee5abf83-9993-4a71-ab9f-1374962b4247"
 					]
 				}
 			},
