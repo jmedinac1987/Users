@@ -4,13 +4,15 @@
   "description": "application to create and update information users, users needed for testing",
   "main": "src/User.js",
   "scripts": {
-    "start": "nodemon src/User.js"
+    "start": "node src/User.js",
+    "develop": "nodemon src/User.js"
   },
   "author": "jmedinac1987",
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",
+    "morgan": "^1.10.0",
     "uuid": "^9.0.0"
   },
   "devDependencies": {

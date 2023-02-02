@@ -30,9 +30,9 @@ function getUser(id) {
 
 function addUser(bodyRequest) {
   try {
-    let { User, Password, Role, App, Environment } = bodyRequest;
+    let { User, Password, Role, App, Environment, Url } = bodyRequest;
 
-    if (!User || !Password || !Role || !App || !Environment) {
+    if (!User || !Password || !Role || !App || !Environment || !Url) {
       return { Status: 400, Response: "Full information not provided 😒" };
     }
 
@@ -43,6 +43,7 @@ function addUser(bodyRequest) {
       Role,
       App,
       Environment,
+      Url
     };
 
     data.push(newUser);
@@ -83,9 +84,9 @@ function updateUser(id, updateInformation) {
     if (Object.keys(updateInformation).length == 0)
       return { Status: 400, Response: "You have not provided information 😒" };
 
-    let { User, Password, Role, App, Environment } = updateInformation;
+    let { User, Password, Role, App, Environment, Url } = updateInformation;
 
-    if (!User || !Password || !Role || !App || !Environment)
+    if (!User || !Password || !Role || !App || !Environment || !Url)
       return { Status: 400, Response: "Full information not provided 😒" };
 
     if (!data.some((user) => user.id == id))
@@ -99,6 +100,7 @@ function updateUser(id, updateInformation) {
       user.Role = Role;
       user.App = App;
       user.Environment = Environment;
+      user.Url = Url;
     });
 
     data = data.filter((user) => user.id != id);

@@ -3,13 +3,23 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const userController = require("./controller/UserController");
+const logger = require('morgan');
 const port = process.env.PORT || 3000;
 
+//Middlewares
 app.use(cors());
+app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.get("/", (req, res) => {
+//View
+app.use(express.static(__dirname + '\\dist\\users\\'));
+app.get('/',(req, res) =>{
+	res.sendFile(path.join(__dirname,'\\dist\\users\\index.html'));
+});
+
+
+app.get("/users", (req, res) => {  
   let data = userController.getUsers();
   return res.status(data.Status).json(data);
 });
