@@ -1,11 +1,1 @@
-[
-  {
-    "id": "babfe74c-945b-493e-99c3-07071cfe5ac5",
-    "User": "test@test.com",
-    "Password": "123441***",
-    "Role": "Admin",
-    "App": "Test App",
-    "Environment": "DEV",
-    "Url": "https://www.google.com"
-  }
-]
+[{"id":"babfe74c-945b-493e-99c3-07071cfe5ac5","User":"test@test.com","Password":"123441***","Role":"Admin","App":"Test App","Environment":"DEV","Url":"https://www.google.com"}]

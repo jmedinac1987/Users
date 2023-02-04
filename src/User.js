@@ -13,9 +13,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 //View
-app.use(express.static(__dirname + '\\dist\\users\\'));
+app.use(express.static(__dirname + '/dist/users/'));
 app.get('/',(req, res) =>{
-	res.sendFile(path.join(__dirname,'\\dist\\users\\index.html'));
+	res.sendFile(path.join(__dirname,'/dist/users/index.html'));
 });
 
 
