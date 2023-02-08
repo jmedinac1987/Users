@@ -32,14 +32,23 @@ function addUser(bodyRequest) {
   try {
     let { User, Password, Role, App, Environment, Url } = bodyRequest;
 
-    if (!User || !Password || !Role || !App || !Environment || !Url ||
-        User.trim() == "" || Password.trim() == "" || Role.trim() == "" || App.trim() == ""  || Environment.trim() == ""
-        || Url.trim() == ""
-      ) {
+    if (
+      !User ||
+      !Password ||
+      !Role ||
+      !App ||
+      !Environment ||
+      !Url ||
+      User.trim() == "" ||
+      Password.trim() == "" ||
+      Role.trim() == "" ||
+      App.trim() == "" ||
+      Environment.trim() == "" ||
+      Url.trim() == ""
+    ) {
       return { Status: 400, Response: "Full information not provided 😒" };
     }
-    
-   
+
     let newUser = {
       id: uuid.v4(),
       User,
@@ -47,7 +56,7 @@ function addUser(bodyRequest) {
       Role,
       App,
       Environment,
-      Url
+      Url,
     };
 
     data.push(newUser);
@@ -90,8 +99,22 @@ function updateUser(id, updateInformation) {
 
     let { User, Password, Role, App, Environment, Url } = updateInformation;
 
-    if (!User || !Password || !Role || !App || !Environment || !Url)
+    if (
+      !User ||
+      !Password ||
+      !Role ||
+      !App ||
+      !Environment ||
+      !Url ||
+      User.trim() == "" ||
+      Password.trim() == "" ||
+      Role.trim() == "" ||
+      App.trim() == "" ||
+      Environment.trim() == "" ||
+      Url.trim() == ""
+    ) {
       return { Status: 400, Response: "Full information not provided 😒" };
+    }
 
     if (!data.some((user) => user.id == id))
       return { Status: 400, Response: "Username does not exist 😒" };
