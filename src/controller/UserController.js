@@ -2,7 +2,7 @@
 
 const fs = require("fs");
 const uuid = require("uuid");
-const path = "src/database/data-example.json";
+const path = "src/database/data.json";
 
 let file = fs.readFileSync(path, "utf-8");
 let data = JSON.parse(file);
