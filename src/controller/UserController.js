@@ -1,8 +1,9 @@
 "use strict";
 
 const fs = require("fs");
+const pathNodeJs = require("path");
 const uuid = require("uuid");
-const path = "src/database/data.json";
+const path = pathNodeJs.join(__dirname, "../database/data.json");
 
 let file = fs.readFileSync(path, "utf-8");
 let data = JSON.parse(file);
